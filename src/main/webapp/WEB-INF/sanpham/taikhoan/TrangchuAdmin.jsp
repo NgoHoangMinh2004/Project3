@@ -38,13 +38,17 @@
         <h2>Chào mừng Admin đến với hệ thống!</h2>
 
         
-        <a href="/Project3/taikhoan/view" class="btn">Xem danh sách tài khoản</a>
+    <a href="/Project3/taikhoan/view" class="btn">Xem danh sách tài khoản</a>
 
     
-        <a href="/Project3/sanpham/view" class="btn">Xem Sản Phẩm</a>
+    <a href="/Project3/sanpham/view" class="btn">Xem Sản Phẩm</a>
 
-        
-        <a href="/taikhoan/logout" class="btn btn-danger">Đăng xuất</a>
+    <a href="http://127.0.0.1:5500/li%C3%AAn%20h%E1%BB%87.html" class="btn">Liên Hệ</a>
+
+    <a href="${pageContext.request.contextPath}/sanpham/giacathitruong/GCTT" class="btn">Giá cả thị trường hiện nay</a>
+       <a href="${pageContext.request.contextPath}/sanpham/sukien/viewsk" class="btn">Sự Kiện</a>
+    <a href="${pageContext.request.contextPath}/sanpham/taikhoan/logout" class="btn btn-danger">Đăng xuất</a>
+
     </div>
 </body>
 </html>

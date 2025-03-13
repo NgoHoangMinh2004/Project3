@@ -6,7 +6,7 @@
 </head>
 <body>
     <h2>Trang Đăng Nhập</h2>
-    <form action="${pageContext.request.contextPath}/taikhoan/login" method="post">
+    <form action="${pageContext.request.contextPath}/sanpham/taikhoan/login" method="post">
     <label>Email:</label>
     <input type="text" name="email" required>
     

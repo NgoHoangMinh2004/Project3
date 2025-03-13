@@ -35,12 +35,14 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd" >
 	<bean id="donhangdao" class="com.springmvc.dao.NHM_DonHangDao">
 		<property name="template" ref="jt"></property>
 	</bean>
-	<bean id="chitietdonhangdao" class="com.springmvc.dao.NHM_ChiTietDonHangDao">
+	<bean id="giacathitruongdao" class="com.springmvc.dao.NHM_GiaCaThiTruongDao">
 		<property name="template" ref="jt"></property>
 	</bean>
-	<bean id="lichsutrangthaidao" class="com.springmvc.dao.NHM_LichSuTrangThaiDao">
+<bean id="suKienDao" class="com.springmvc.dao.NHM_SuKienDao">
 		<property name="template" ref="jt"></property>
 	</bean>
-	
+	<bean id="suKienDangKyDao" class="com.springmvc.dao.NHM_SuKienDangKyDao">
+		<property name="template" ref="jt"></property>
+	</bean>
 	
 </beans>

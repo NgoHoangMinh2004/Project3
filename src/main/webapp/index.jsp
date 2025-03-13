@@ -103,8 +103,8 @@
                 <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/476/small_2x/facebook-logo-facebook-icon-transparent-free-png.png" alt="FB">
                 Facebook
             </a>
-            <a href="${pageContext.request.contextPath}/taikhoan/dang-nhap" class="login-btn">Đăng nhập</a>
-            <a href="${pageContext.request.contextPath}/taikhoan/dang-ky" class="register-btn">Đăng ký</a>
+            <a href="${pageContext.request.contextPath}/sanpham/taikhoan/dang-nhap" class="login-btn">Đăng nhập</a>
+            <a href="${pageContext.request.contextPath}/sanpham/taikhoan/dang-ky" class="register-btn">Đăng ký</a>
         </div>
     </div>
     <div class="header">VLXD Hoàng Minh</div>
@@ -113,6 +113,7 @@
         <a href="http://localhost:8081/Project3/sanpham/user">Sản phẩm</a>
         <a href="http://127.0.0.1:5500/li%C3%AAn%20h%E1%BB%87.html">Liên hệ</a>
         <a href="http://127.0.0.1:5500/Gi%C3%A1%20C%E1%BA%A3%20Th%E1%BB%8B%20Tr%C6%B0%E1%BB%9Dng.html">Giá cả thị trường</a>
+      
     </div>
     <div class="banner">
         <div class="banner-text">Hoàng Minh / Chuyên cung cấp vật liệu xây dựng tại Hà Nội</div>

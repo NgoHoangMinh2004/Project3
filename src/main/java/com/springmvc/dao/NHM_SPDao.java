@@ -16,7 +16,10 @@ public class NHM_SPDao {
     public void setTemplate(JdbcTemplate template) {
         this.template = template;
     }
-
+    public int updateSoLuong(int id, int soLuongMoi) {
+        String sql = "UPDATE NHM_SanPham SET nhm_so_luong_ton=? WHERE nhm_sp_id=?";
+        return template.update(sql, soLuongMoi, id);
+    }
     // Thêm sản phẩm mới
     public int save(NHM_SP sp) {
         String sql = "INSERT INTO NHM_SanPham(nhm_ten_sp, nhm_mo_ta, nhm_gia_ban, nhm_so_luong_ton, nhm_loai_sp) VALUES(?, ?, ?, ?, ?)";

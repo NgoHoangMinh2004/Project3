@@ -1,12 +1,6 @@
 eclipse.preferences.version=1
-encoding//src/main/webapp/WEB-INF/sanpham/donhang/editCTDH.jsp=UTF-8
-encoding//src/main/webapp/WEB-INF/sanpham/donhang/editDH.jsp=UTF-8
-encoding//src/main/webapp/WEB-INF/sanpham/donhang/saveCTDH.jsp=UTF-8
-encoding//src/main/webapp/WEB-INF/sanpham/donhang/saveDH.jsp=UTF-8
-encoding//src/main/webapp/WEB-INF/sanpham/donhang/viewLSTT.jsp=UTF-8
-encoding//src/main/webapp/WEB-INF/sanpham/donhang/viewctdh.jsp=UTF-8
-encoding//src/main/webapp/WEB-INF/sanpham/donhang/viewdh.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/sanpham/editview.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/sanpham/giacathitruong/GCTT.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/sanpham/saveview.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/sanpham/taikhoan/viewTK.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/sanpham/view.jsp=UTF-8
