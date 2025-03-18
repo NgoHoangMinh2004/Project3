@@ -1,89 +1,140 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VLXD Hoàng Minh</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-        }
-        .top-bar {
-            width: 100%;
-            background-color: black;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .top-bar .phone {
-            font-size: 14px;
-        }
-        .top-bar .fb-btn {
-            background-color: #1877F2;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: bold;
-        }
-        .header {
-            text-align: center;
-            font-size: 28px;
-            font-weight: bold;
-            padding: 20px 0;
-        }
-        .nav-bar {
-            display: flex;
-            justify-content: center;
-            background-color: #343a40;
-            padding: 10px 0;
-        }
-        .nav-bar a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            margin: 0 5px;
-            border: 1px solid white;
-        }
-        .banner {
-            width: 100%;
-            height: 300px;
-            background: url('banner.jpg') center/cover no-repeat;
-        }
-        .content {
-            padding: 20px;
-            text-align: justify;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giới thiệu - VLXD Hoàng Minh</title>
+  <style>
+    /* Cài đặt chung */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    /* Top Bar */
+    .top-bar {
+      width: 100%;
+      background-color: #212529;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .top-bar .phone {
+      font-size: 14px;
+    }
+    .top-bar .fb-btn {
+      background-color: #1877F2;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .top-bar .fb-btn:hover {
+      background-color: #145dbf;
+    }
+    /* Header */
+    .header {
+      background-color: #343a40;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    /* Navigation Bar */
+    .nav-bar {
+      background-color: #495057;
+      display: flex;
+      justify-content: center;
+      padding: 12px 0;
+    }
+    .nav-bar a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 0 5px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .nav-bar a:hover {
+      background-color: #343a40;
+    }
+    /* Banner */
+    .banner {
+      width: 100%;
+      height: 300px;
+      background: url('banner.jpg') center/cover no-repeat;
+    }
+    /* Content Container */
+    .content {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      line-height: 1.6;
+    }
+    .content h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #343a40;
+    }
+    .content p {
+      margin-bottom: 15px;
+      font-size: 16px;
+      text-align: justify;
+    }
+    @media (max-width: 600px) {
+      .nav-bar a { font-size: 14px; padding: 8px 12px; }
+      .header { font-size: 24px; }
+      .content h1 { font-size: 20px; }
+    }
+  </style>
 </head>
 <body>
-    <div class="top-bar">
-        <span class="phone">Hotline: 0362252912</span>
-        <a href="#" class="fb-btn">Facebook</a>
-    </div>
-    <div class="header">Giới thiệu về VLXD Hoàng Minh</div>
-    <div class="nav-bar">
-        <a href="http://localhost:8081/Project3/sanpham/taikhoan/trangchu-user">Trang chủ</a>
-        <a href="http://localhost:8081/Project3/sanpham/user">Sản phẩm</a>
-        <a href="http://127.0.0.1:5500/gi%E1%BB%9Bi%20thi%E1%BB%87u.html">Giới thiệu</a>
-        <a href="http://127.0.0.1:5500/li%C3%AAn%20h%E1%BB%87.html">Liên hệ</a>
-        <a href="http://localhost:8081/Project3/sanpham/giacathitruong/viewgctt">Giá Cả thị trường</a>
-    </div>
-    <div class="banner"></div>
-    <div class="content">
-        <h1>Giới thiệu về VLXD Hoàng Minh</h1>
-    <p>Chào mừng quý khách đến với VLXD Hoàng Minh – đơn vị chuyên cung cấp vật liệu xây dựng uy tín tại Hà Nội. Với nhiều năm kinh nghiệm trong lĩnh vực, chúng tôi cam kết mang đến cho khách hàng những sản phẩm chất lượng cao, giá cả cạnh tranh và dịch vụ tận tâm.
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <span class="phone">Hotline: 0362252912</span>
+    <a href="#" class="fb-btn">Facebook</a>
+  </div>
 
-        Chúng tôi cung cấp đa dạng các loại vật liệu như cát, đá, xi măng, gạch, sắt thép và nhiều sản phẩm khác, đáp ứng đầy đủ nhu cầu xây dựng từ công trình dân dụng đến dự án lớn. Bên cạnh đó, VLXD Hoàng Minh luôn cập nhật bảng giá mới nhất, đảm bảo khách hàng nhận được thông tin chính xác và minh bạch.
-        
-        Với phương châm "Chất lượng – Uy tín – Tận tâm", chúng tôi không ngừng cải tiến dịch vụ để mang đến sự hài lòng tối đa cho khách hàng. Hãy liên hệ ngay với chúng tôi để được tư vấn và báo giá tốt nhất!</p>
-    </div>
+  <!-- Header -->
+  <div class="header">Giới thiệu về VLXD Hoàng Minh</div>
+
+  <!-- Navigation Bar -->
+  <div class="nav-bar">
+    <a href="http://localhost:8081/Project3/sanpham/taikhoan/trangchu-user">Trang chủ</a>
+    <a href="http://localhost:8081/Project3/sanpham/user">Sản phẩm</a>
+    <a href="http://127.0.0.1:5500/gi%E1%BB%9Bi%20thi%E1%BB%87u.html">Giới thiệu</a>
+    <a href="http://127.0.0.1:5500/li%C3%AAn%20h%E1%BB%87.html">Liên hệ</a>
+    <a href="http://localhost:8081/Project3/sanpham/giacathitruong/viewgctt">Giá Cả thị trường</a>
+  </div>
+
+  <!-- Banner -->
+  <div class="banner"></div>
+
+  <!-- Content -->
+  <div class="content">
+    <h1>Giới thiệu về VLXD Hoàng Minh</h1>
+    <p>
+      Chào mừng quý khách đến với VLXD Hoàng Minh – đơn vị chuyên cung cấp vật liệu xây dựng uy tín tại Hà Nội. Với nhiều năm kinh nghiệm trong lĩnh vực, chúng tôi cam kết mang đến cho khách hàng những sản phẩm chất lượng cao, giá cả cạnh tranh và dịch vụ tận tâm.
+    </p>
+    <p>
+      Chúng tôi cung cấp đa dạng các loại vật liệu như cát, đá, xi măng, gạch, sắt thép và nhiều sản phẩm khác, đáp ứng đầy đủ nhu cầu xây dựng từ công trình dân dụng đến dự án lớn. Bên cạnh đó, VLXD Hoàng Minh luôn cập nhật bảng giá mới nhất, đảm bảo khách hàng nhận được thông tin chính xác và minh bạch.
+    </p>
+    <p>
+      Với phương châm <strong>"Chất lượng – Uy tín – Tận tâm"</strong>, chúng tôi không ngừng cải tiến dịch vụ để mang đến sự hài lòng tối đa cho khách hàng. Hãy liên hệ ngay với chúng tôi để được tư vấn và báo giá tốt nhất!
+    </p>
+  </div>
 </body>
 </html>

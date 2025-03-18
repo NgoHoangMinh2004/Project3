@@ -26,7 +26,6 @@ public class NHM_TaiKhoanController {
         return "taikhoan/TrangchuAdmin"; 
     }
 
-
     @GetMapping("/dang-nhap")
     public String showLoginPage() {
         return "taikhoan/DangNhap";
@@ -111,12 +110,7 @@ public class NHM_TaiKhoanController {
         return "redirect:/sanpham/taikhoan/dang-nhap";
     }
 
-    @GetMapping("/edit/{id}")
-    public String edit(@PathVariable int id, Model model) {
-        NHM_TaiKhoan tk = taiKhoanDao.getTaiKhoanById(id);
-        model.addAttribute("command", tk);
-        return "taikhoan/formTK";
-    }
+   
 
     @GetMapping("/delete/{id}")
     public String delete(@PathVariable int id, HttpSession session) {

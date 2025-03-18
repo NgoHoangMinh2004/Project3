@@ -38,7 +38,7 @@
         <h2>Chào mừng Admin đến với hệ thống!</h2>
 
         
-    <a href="/Project3/taikhoan/view" class="btn">Xem danh sách tài khoản</a>
+    <a href="${pageContext.request.contextPath}/sanpham/taikhoan/view" class="btn">Xem danh sách tài khoản</a>
 
     
     <a href="/Project3/sanpham/view" class="btn">Xem Sản Phẩm</a>

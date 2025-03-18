@@ -10,8 +10,10 @@
 %>
 <html>
 <head>
-    <title>Trang Chủ - Vật Liệu Xây Dựng</title>
+    <meta charset="UTF-8">
+    <title>Danh sách Sự Kiện - VLXD Hoàng Minh</title>
     <style>
+        /* Reset & Body */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -66,6 +68,8 @@
             font-size: 28px;
             font-weight: bold;
             padding: 20px 0;
+            background-color: #343a40;
+            color: white;
         }
         /* Menu điều hướng */
         .nav-bar {
@@ -103,8 +107,10 @@
             font-weight: bold;
             text-align: center;
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
         }
-
         /* Bảng sự kiện */
         .event-section {
             padding: 20px;
@@ -140,7 +146,7 @@
         table.event-table td button:hover {
             background-color: #0056b3;
         }
-        /* Button "Thêm Sự Kiện" và "Về Trang Chủ User" */
+        /* Button "Về Trang Chủ User" */
         .top-buttons {
             display: flex;
             justify-content: center;
@@ -169,12 +175,10 @@
         <div class="phone">
             Hotline: 0362252912
         </div>
-
         <div class="user-info">
             <span>Chào mừng, <%= tenTaiKhoan %></span>
             <a href="${pageContext.request.contextPath}/sanpham/taikhoan/logout">Đăng xuất</a>
         </div>
-
         <a href="https://www.facebook.com" class="fb-btn">
             <img src="https://coachingskills.vn/wp-content/uploads/2024/07/facebook-logo-icon-facebook-icon-png-images-icons-and-png-backgrounds-1.png" alt="Facebook"> 
             Facebook
@@ -186,7 +190,7 @@
 
     <!-- Thanh menu điều hướng -->
     <div class="nav-bar">
-   	    <a href="${pageContext.request.contextPath}/sanpham/taikhoan/TrangchuUser">Trang Chủ</a>
+        <a href="${pageContext.request.contextPath}/sanpham/taikhoan/TrangchuUser">Trang Chủ</a>
         <a href="http://127.0.0.1:5500/gi%E1%BB%9Bi%20thi%E1%BB%87u.html">Giới thiệu</a>
         <a href="http://localhost:8081/Project3/sanpham/user">Sản phẩm</a>
         <a href="http://127.0.0.1:5500/li%C3%AAn%20h%E1%BB%87.html">Liên hệ</a>
@@ -201,17 +205,14 @@
         </div>
     </div>
 
+    <!-- Phần danh sách Sự Kiện -->
     <div class="event-section">
         <h2>Danh sách Sự Kiện</h2>
-        
-  
         <div class="top-buttons">
-
             <a href="${pageContext.request.contextPath}/sanpham/taikhoan/TrangchuUser">
                 <button>Về Trang Chủ User</button>
             </a>
         </div>
-        
         <table class="event-table">
             <tr>
                 <th>ID</th>
@@ -229,16 +230,15 @@
                     <td>${sk.nhm_ngay_bat_dau}</td>
                     <td>${sk.nhm_ngay_ket_thuc}</td>
                     <td>
-                        <!-- Nút Đăng ký -->
                         <a href="${pageContext.request.contextPath}/sanpham/sukien/dangky/${sk.nhm_sk_id}">
                             <button>Đăng ký</button>
                         </a>
                         <c:if test="${not empty errorMessage}">
-    <script>alert('${errorMessage}');</script>
-</c:if>
-<c:if test="${not empty successMessage}">
-    <script>alert('${successMessage}');</script>
-</c:if>
+                            <script>alert('${errorMessage}');</script>
+                        </c:if>
+                        <c:if test="${not empty successMessage}">
+                            <script>alert('${successMessage}');</script>
+                        </c:if>
                     </td>
                 </tr>
             </c:forEach>

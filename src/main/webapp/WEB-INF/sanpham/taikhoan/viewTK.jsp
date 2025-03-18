@@ -33,7 +33,6 @@
                     <td>${tk.nhm_sdt}</td>
                     <td>${tk.nhm_loai_tk}</td>
                     <td>
-                        <a href="edit/${tk.nhm_tk_id}" class="btn btn-warning btn-sm">Sửa</a>
                         <a href="delete/${tk.nhm_tk_id}" class="btn btn-danger btn-sm">Xóa</a>
                     </td>
                 </tr>
