@@ -141,7 +141,7 @@
             Hotline: 0362252912
         </div>
         <div class="user-info">
-            <span>Chào mừng, <%= tenTaiKhoan %></span>
+            <span>Chào mừng</span>
             <a href="${pageContext.request.contextPath}/sanpham/taikhoan/logout">Đăng xuất</a>
         </div>
         <a href="https://www.facebook.com" class="fb-btn">
